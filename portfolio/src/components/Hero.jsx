@@ -7,7 +7,8 @@ import { DiHtml5 ,DiCss3,DiJavascript,DiMongodb} from "react-icons/di";
 import { TbBrandNodejs } from "react-icons/tb";
 import { SiExpress } from "react-icons/si";
 import { DiReact } from "react-icons/di";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import { SiMongodb } from "react-icons/si";
 
 
 
@@ -129,6 +130,7 @@ export const Hero = () => {
                 <DiReact className="text-blue-500 mx-2" />
                 <TbBrandNodejs className="text-green-500 mx-2" />
                 <SiExpress className="text-white mx-2" />
+                <SiMongodb className="text-green-500"/>
             </div>
         </motion.div>
         <div className="absolute inset-0 hidden md:block">

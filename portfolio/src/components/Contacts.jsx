@@ -18,26 +18,28 @@ const Contacts = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await fetch('http://localhost:5000/api/send-email', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
-      });
+//   const handleSubmit = async (e) => {
+//     e.preventDefault();
+//     try {
+//       const response = await fetch('/api/send-email', {
+//         method: 'POST',
+//         headers: { 'Content-Type': 'application/json' },
+//         body: JSON.stringify(formData),
+//       });
 
-      if (response.ok) {
-        setResponseMessage('Message sent successfully!');
-        setFormData({ name: '', email: '', message: '' });
-      } else {
-        setResponseMessage('Failed to send message. Please try again.');
-      }
-    } catch (error) {
-      console.error(error);
-      setResponseMessage('An error occurred. Please try again later.');
-    }
-  };
+//       if (response.ok) {
+//         setResponseMessage('Message sent successfully!');
+//         setFormData({ name: '', email: '', message: '' });
+//       } else {
+//         setResponseMessage('Failed to send message. Please try again.');
+//       }
+//     } catch (error) {
+//       console.error(error);
+//       setResponseMessage('An error occurred. Please try again later.');
+//     }
+// };
+
+  
 
   return (
     <div className="px-6 max-w-[1000px] mx-auto md:my-12" id="contact">
@@ -46,9 +48,10 @@ const Contacts = () => {
           <div>
             <div className="text-gray-300 my-3">
               <h3 className="text-4xl font-semibold mb-5">About <span>Me</span></h3>
-              <p className="text-justify leading-7 w-11/12">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit...
-              </p>
+              <p className="text-justify m-0 leading-normal max-w-[90%]">
+  I am a 5th-semester student at Dayananda Sagar College of Engineering, passionate about technology, problem-solving, and software development. I enjoy tackling challenges and building impactful solutions.
+</p>
+
             </div>
 
             <div className="flex mt-10 items-center gap-7">
@@ -63,12 +66,13 @@ const Contacts = () => {
             </div>
           </div>
 
-          <form onSubmit={handleSubmit} className="max-w-6xl p-5 md:p-12" id="form">
+          <form action="https://formsubmit.co/shubhiv612@gmail.com" method="POST" 
+          className="max-w-6xl p-5 md:p-12" id="form">
             <p className="text-gray-100 font-bold text-xl mb-2">Let’s connect!</p>
             <input
               type="text"
               name="name"
-              placeholder="Your Name ..."
+              placeholder="Your Name"
               value={formData.name}
               onChange={handleChange}
               className="mb-2 w-full rounded-md border border-purple-600 py-2 pl-2 pr-4"
@@ -76,14 +80,14 @@ const Contacts = () => {
             <input
               type="email"
               name="email"
-              placeholder="Your Email ..."
+              placeholder="Your Email"
               value={formData.email}
               onChange={handleChange}
               className="mb-2 w-full rounded-md border border-purple-600 py-2 pl-2 pr-4"
             />
             <textarea
               name="message"
-              placeholder="Your Message ..."
+              placeholder="Your Message"
               value={formData.message}
               onChange={handleChange}
               className="mb-2 w-full rounded-md border border-purple-600 py-2 pl-2 pr-4"

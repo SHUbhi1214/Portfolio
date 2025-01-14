@@ -36,7 +36,7 @@ const Skills = () => {
             <h2 className="text-3xl font-bold mb-4 text-center">
                 Skills
             </h2>
-            <p className=" text-center mb-8">I worked on various frontend and fullstack projects.check them<a href="#" className="underline ml-1">there</a></p>
+            <p className=" text-center mb-8">I have worked on various frontend and fullstack projects check them<a href="https://github.com/SHUbhi1214" className="underline ml-1">here</a></p>
 
             <div className ="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8 max -w-[1000px] mx-auto">
 
