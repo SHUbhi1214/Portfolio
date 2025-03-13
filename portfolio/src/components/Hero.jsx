@@ -70,11 +70,12 @@ export const Hero = () => {
                     </motion.button>
 
                     <div className="flex gap-6 flex-row text-4xl md:text-6xl  z-20">
-                        <motion.a whileHover={{ scale: 1.2 }} href="https://github.com/SHUbhi1214" className="text-white">
+                        <motion.a whileHover={{ scale: 1.2 }} href="https://github.com/SHUBHIEE12" className="text-white">
                             <AiOutlineGithub/>
                         </motion.a>
 
-                        <motion.a whileHover={{ scale: 1.2 }} href="www.linkedin.com/in/shubhi-verma12" className="text-blue-600">
+                       
+                        <motion.a whileHover={{ scale: 1.2 }} href="https://www.linkedin.com/in/shubhi-verma12/" className="text-blue-600">
 
 
                             <AiOutlineLinkedin/>

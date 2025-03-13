@@ -49,18 +49,15 @@ const Contacts = () => {
             <div className="text-gray-300 my-3">
               <h3 className="text-4xl font-semibold mb-5">About <span>Me</span></h3>
               <p className="text-justify m-0 leading-normal max-w-[90%]">
-  I am a 5th-semester student at Dayananda Sagar College of Engineering, passionate about technology, problem-solving, and software development. I enjoy tackling challenges and building impactful solutions.
+  I am a third year undergrad at Birla Institute of Technology, Mesra  passionate about technology, problem-solving, and software development. I enjoy tackling challenges and building impactful solutions.
 </p>
 
             </div>
 
             <div className="flex mt-10 items-center gap-7">
-              <div className="bg-gray-800/40 p-4 rounded-lg">
-                <h3 className="md:text-4xl text-2xl font-semibold text-white">10<span>+</span></h3>
-                <p className="text-xs md:text-base"><span>Projects</span></p>
-              </div>
+              
               <div className="bg-gray-800/40 p-5 rounded-lg">
-                <h3 className="md:text-4xl text-2xl font-semibold text-white">8.7<span className="text-sm">AVG</span></h3>
+                <h3 className="md:text-4xl text-2xl font-semibold text-white">7.58<span className="text-sm">AVG</span></h3>
                 <p className="text-xs md:text-base"><span>CGPA</span></p>
               </div>
             </div>

@@ -4,10 +4,6 @@ import Reveal from './Reveal'
 
 const achievements = [
 
-    {
-        Title:"Hack -a-City",
-        description:"Secured 3rd Rank in inter-college hackathon organised by City Engineering college,Bengaluru",
-    },
 
     {
         Title:"Geeks for Geeks",
